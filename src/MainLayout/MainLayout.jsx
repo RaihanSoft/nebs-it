@@ -2,18 +2,17 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../Common/Navbar";
 import Footer from "../Common/Footer";
 import Banner from "../Common/Banner";
-import solar from "../assets/solar.avif"; // Import the image
-
+import solar from "../assets/solar.avif";
 const MainLayout = () => {
   return (
-    <div className="relative min-h-screen bg-cover bg-center bg-fixed" style={{ backgroundImage: `url(${solar})` }}>
+    <div className=" p-2 relative bg-no-repeat  bg-cover bg-center bg-fixed -top-2" style={{ backgroundImage: `url(${solar})` }}>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div> 
+      <div className="absolute inset-0  bg-black/60"></div>
 
       {/* Content with z-index to appear above overlay */}
-      <div className="relative z-10">
+      <div className="relative z-10 container mx-auto">
         <Navbar />
-        <div className="flex  justify-center items-center min-h-screen">
+        <div className=" -mt-20 flex flex-col lg:flex-row justify-center items-center min-h-screen">
           <Banner />
           <Outlet />
         </div>

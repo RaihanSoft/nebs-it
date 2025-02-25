@@ -2,7 +2,7 @@ const Navbar = () => {
     
     return (
     
-        <div className=" font-[Space_Grotesk] text-[16px] md:text-2xl text-[#FFFFFF font-bold  " >
+        <div className=" text-[16px] md:text-2xl text-[#FFFFFF] font-bold  " >
             Homeowners
             <br />
             Benefit
