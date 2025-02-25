@@ -5,7 +5,7 @@ import Banner from "../Common/Banner"
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className="container mx-auto p-2" >
             <Navbar />
             <div className="flex justify-center items-center " >
                 <Banner />
